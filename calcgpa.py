@@ -69,3 +69,8 @@ class GPAWidget(QWidget):
 
         gpa = calculate_gpa(report_card)
         self.result_label.setText(f"Your GPA is: {gpa}")
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = GPAWidget()
+    window.show()
+    sys.exit(app.exec_())
